@@ -3,7 +3,7 @@ package com.prashArray;
 public class FloorBS {
     public static void main(String[] args) {
         int[] arr= {10, 20, 30, 40, 50, 60};
-        int target= 45;
+        int target= 5;
         System.out.println(calculate_floor(arr, target));
     }
 
@@ -23,6 +23,10 @@ public class FloorBS {
             else {
                 end=mid-1;
             }
+        }
+
+        if(target<arr[0]){
+            return -1;
         }
 
         return arr[end];

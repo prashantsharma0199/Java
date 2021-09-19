@@ -26,6 +26,9 @@ public class CeilBS {
                 end= mid-1;
             }
         }
+        if(target>arr[arr.length-1]){
+            return -1;
+        }
 
         return arr[start];
     }
