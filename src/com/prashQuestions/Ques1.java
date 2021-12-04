@@ -19,6 +19,7 @@ import java.util.HashMap;
 public class Ques1 {
     public static void main(String[] args) {
         String s = "324425";
+        System.out.println(maximum(s));
     }
 
     public static int maximum(String s){

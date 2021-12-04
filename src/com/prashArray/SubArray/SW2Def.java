@@ -1,8 +1,6 @@
 package com.prashArray.SubArray;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class SW2Def {
     public static void main(String[] args) {
@@ -11,8 +9,9 @@ public class SW2Def {
         SW(arr, windowSize);
     }
 
+
     public static void SW(int[] arr, int k){
-        PriorityQueue<Integer> queue= new PriorityQueue<>();
+        Queue<Integer> queue= new LinkedList<>();
         int i=0;
         int j=0;
         while(j< arr.length){
@@ -22,19 +21,23 @@ public class SW2Def {
             if(j-i+1<k){
                 j++;
             }
+
             else if(j-i+1==k){
                 if(queue.isEmpty()){
                     System.out.println(0);
                 }
-                else if(arr[j]== queue.peek()) {
-                    System.out.println(arr[j]);
+                else if(arr[i]== queue.peek()) {
+                    System.out.println(arr[i]);
                     queue.remove();
+
+                }
+                else{
+                    System.out.println(queue.peek());
                 }
                 i++;
                 j++;
             }
+//            System.out.println(queue);
         }
     }
-
-
 }
