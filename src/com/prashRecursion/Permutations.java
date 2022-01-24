@@ -4,11 +4,10 @@ import java.util.ArrayList;
 
 public class Permutations {
     public static void main(String[] args) {
-        String str="abcd";
+        String str="GOD";
 //        Per("",str);
 //        System.out.println(ListPer("",str).size());
         System.out.println(ListPer("",str));
-
     }
 
     public static void Per(String res, String str){

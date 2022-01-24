@@ -12,7 +12,6 @@ package com.prashRecursion.Questions;
 public class MinMax {
     public static void main(String[] args) {
         int[] arr= {1, 4, 3, -5, -4, 8, 6};
-
         System.out.println(mina(arr, arr.length-1));
     }
 

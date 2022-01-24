@@ -3,7 +3,7 @@ package com.prashRecursion;
 public class RotatedBinarySearch {
     public static void main(String[] args) {
         int[] arr={5,6,7,8,9,1,2,3};
-        System.out.println(search(arr,3, 0, arr.length-1));
+        System.out.println(search(arr,1, 0, arr.length-1));
     }
 
     public static int search(int[] arr, int target, int start, int end){

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Subset {
     public static void main(String[] args) {
-        String str="359";
+        String str="cca";
 //        formSubset("", str);
-//        System.out.println(retSubset("", str));
+        System.out.println(retSubset("", str));
 
-        int[] arr={3,2,2};
-        System.out.println(getmeSubset(arr));
-        System.out.println(DupSubset(arr));
+//        int[] arr={3,2,2};
+//        System.out.println(getmeSubset(arr));
+//        System.out.println(DupSubset(arr));
     }
 
     //Get me all possible subsets

@@ -3,7 +3,7 @@ package com.prashArray;
 public class CeilBS {
     public static void main(String[] args) {
         int[] arr= {10, 20, 30, 40, 50, 60};
-        int target= 65;
+        int target= 45;
         System.out.println(calculate_ceil(arr, target));
 
     }
